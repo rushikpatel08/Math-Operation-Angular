@@ -25,7 +25,7 @@ export class OperationServiceService {
     let params = new HttpParams().set('num1', num1).set('num2', num2);
     return this.http.get<number>(`${this.apiUrl}/mul`, { params });
   }
-
+//divide
   getDiv(num1: number, num2: number): Observable<number> {
     let params = new HttpParams().set('num1', num1).set('num2', num2);
     return this.http.get<number>(`${this.apiUrl}/div`, { params });
